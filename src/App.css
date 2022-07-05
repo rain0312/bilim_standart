@@ -2,7 +2,7 @@
   #features {
     padding: 20px;
     width: 111%;
-  }
+  };
   #about,
   #services,
   #testimonials,
@@ -10,9 +10,9 @@
   #contact,
   #footer {
     width: 111%;
-  }
+  };
 
   #portfolio {
     width: 110%;
-  }
+  };
 }

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import emailjs from 'emailjs-com'
+import axios from 'axios';
 
 const initialState = {
   name: '',
@@ -20,6 +21,11 @@ export const Contact = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    
+    axios.post("https://bilimstandart.herokuapp.com/send-email", { name, email, message, phone, date })
+    .then((response) => {
+      console.log(response);
+    });
     emailjs
       .sendForm(
         'service_ewdezvl', 'template_je3ymic', e.target, 'zhkox06-88sllS1Km'
