@@ -1,5 +1,5 @@
 {
-  "homepage": "http://rain0312.github.io/bilimstandart",
+  "homepage": "http://rain0312.github.io/bilim_standart",
   "name": "landingpage-react-template",
   "private": true,
   "dependencies": {
@@ -37,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
